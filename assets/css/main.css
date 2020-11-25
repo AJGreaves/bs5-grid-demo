@@ -174,11 +174,7 @@ pre.language-markup {
 /* extra small devices and down */
 
 @media screen and (max-width: 575.9px) {
-    /* Changes the colour of the columns to match their responsive size */
-    .col-6.col-sm-8.resp-col,
-    .col-6.col-sm-4.resp-col {
-        background-color: #fe5000;
-    }
+    
     h1 {
         font-size: 2.2rem;
         padding-top: 1.5rem;
@@ -200,88 +196,10 @@ pre.language-markup {
     }
 }
 
-
-/* small devices and up */
-
-@media screen and (min-width: 576px) {
-    /* Changes the colour of the columns to match their responsive size */
-    .col-6.col-sm-8.resp-col {
-        background-color: #009f4d;
-    }
-    .col-6.col-sm-4.resp-col {
-        background-color: #da1884;
-    }
-}
-
-/* small devices and down */
-
-@media screen and (max-width: 767.9px) {
-    /* Changes the colour of the columns to match their responsive size */
-    .col-12.col-md-6,
-    .col-12.col-md-5.resp-col,
-    .col-12.col-md-7.resp-col,
-    .col-12.col-md-4.col-lg-5.resp-col {
-        background-color: #74d2e7;
-    }
-}
-
 /* Medium devices and up */
 
 @media screen and (min-width: 768px) {
-    /* Changes the colour of the columns to match their responsive size */
-    /* .col-12.col-md-6 {
-        background-color: #fe5000;
-    } */
-    .col-12.col-md-5.resp-col {
-        background-color: #e4002b;
-    }
-    .col-12.col-md-7.resp-col {
-        background-color: #efdf00;
-    }
-    .col-12.col-md-4.col-lg-5.resp-col {
-        background-color: #da1884;
-    }
     pre.language-markup {
     padding: 0 3em;
-    }
-}
-
-/* Medium devices and down */
-
-@media screen and (max-width: 991.9px) {
-    /* Changes the colour of the columns to match their responsive size */
-    .col-12.col-lg-4.resp-col {
-        background-color: #74d2e7;
-    }
-
-}
-
-/* large devices and up */
-
-@media screen and (min-width: 992px) {
-    /* Changes the colour of the columns to match their responsive size */
-    .col-12.col-lg-4.resp-col {
-        background-color: #da1884;
-    }
-    .col-12.col-md-4.col-lg-5.resp-col {
-        background-color: #e4002b;
-    }
-}
-
-/* large devices and down */
-
-@media screen and (max-width: 1199.9px) {
-    /* Changes the colour of the columns to match their responsive size */
-    .col-6.col-xl-3.resp-col {
-        background-color: #fe5000;
-    }
-}
-
-/* extra large devices and up */
-
-@media screen and (min-width: 1200px) {
-    /* Changes the colour of the columns to match their responsive size */
-    .col-6.col-xl-3.resp-col {
-        background-color: #a51890;
     }
 }
