@@ -42,9 +42,6 @@ p {
     padding-bottom: 1rem;
 }
 
-.column-sizes p {
-    font-size: 1rem;
-}
 
 /* paddings and margins */
 
@@ -123,7 +120,7 @@ pre.language-markup {
 
 .columns-column {
     height: 75px;
-    border: 2px solid #000;
+    border: 1px solid var(--grey);
     margin-bottom: 4px;
     text-align: left;
     padding-top: 1.5rem;
