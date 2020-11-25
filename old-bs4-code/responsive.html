@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no"  />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<meta name="description" content="Bootstrap demo site">
+	<meta name="author" content="Anna Greaves">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link rel="stylesheet" href="assets/css/prism.css">
+    <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
+    <title>Bootstrap grid demo | Responsive</title>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
+        <a class="navbar-brand mr-1" href="index.html">
+			<img src="assets/images/logo.gif" height="40" alt="AG logo" title="AG logo">
+		</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Grid Essentials</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="containers.html">Containers</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="rows.html">Rows</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="columns.html">Columns</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="responsive.html">Responsive</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="spacing.html">Spacing</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="wrapper bg-secondary text-white">
+            <div class="container-fluid p-0">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 text-left">
+                        <header>
+                            <h1 class="text-center mt-4">The responsive grid</h1>
+                        </header>
+                        <ul>
+                            <li>The real magic of the bootstrap grid is that it is responsive to screen sizes.</li>
+                            <li>While two columns next to each other might look great on a desktop, the same layout would not look good on a narrow mobile screen.</li>
+                            <li>We can use bootstrap's built-in media queries to tell it what size our columns should be on different devices.</li>
+                            <li>We do this by adding one of the following to our column classes.</li>
+                            <ul>
+                                <li><span class="mono">sm</span> for small devices (landscape phones, 576px and up)</li>
+                                <li><span class="mono">md</span> for medium devices (tablets, 768px and up)</li>
+                                <li><span class="mono">lg</span> for large devices (desktops, 992px and up)</li>
+                                <li><span class="mono">xl</span> for extra large devices (large desktops, 1200px and up)</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper m-0">
+
+            <div class="container-fluid p-0">
+                <div class="row no-gutters justify-content-center text-left">
+                    <div class="col-12">
+                        <h2 class="text-center">Adding responsive column classes</h2>
+                        <ul>
+                            <li>In the code below I have added 2 column classes to each of my divs.</li>
+                            <li>The first class <span class="mono">col-12</span> on its own would apply 100% width to the column on all screens.</li>
+                            <li>The second class <span class="mono">col-md-6</span> applies a media query to the column for screen sizes medium size and larger.</li>
+                            <li class="bold">Note that all bootstrap media query classes work to the mobile first model.</li>
+                            <li>This means any size you use will be applied to that size and all sizes above it, unless you add another media query class for larger screens after it.</li>
+                            <li>So when we apply both classes <span class="mono">col-12 col-md-6</span> on two columns in the same row, this results in each column appearing as full width on mobile screens (one on top of the other), and half width on medium
+                                screens and larger (next to each other)</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-md-8 col-lg-6">
+                        <!-- Example code block to show responsive columns -->
+                        <pre>
+							<code class="language-markup">
+								<script type="prism-html-markup">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-md-6"></div>
+        <div class="col-12 col-md-6"></div>
+    </div>
+</div>
+								</script>
+							</code>
+						</pre>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-12">
+                        <p class="text-center">Change the width of your browser window to see how the columns width responds</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 basics-column text-center">
+                        <p class="d-none d-md-block">
+                            <span class="faded mono">col-12</span> <span class="bold mono">col-md-6</span>
+                        </p>
+                        <p class="d-block d-md-none">
+                            <span class="bold mono">col-12</span> <span class="faded mono">col-md-6</span>
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-6 basics-column text-center">
+                        <p class="d-none d-md-block">
+                            <span class="faded mono">col-12</span> <span class="bold mono">col-md-6</span>
+                        </p>
+                        <p class="d-block d-md-none">
+                            <span class="bold mono">col-12</span> <span class="faded mono">col-md-6</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="wrapper m-0">
+            <div class="container-fluid">
+                <div class="row pb-2 text-left">
+                    <div class="col-12 text-center">
+                        <h2>Other responsive columns in action</h2>
+                        <p>Change the width of your browser screen to see how the columns width responds</p>
+                    </div>
+                    <div class="col-12 basics-column text-center">
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <p class="mb-1 pb-0"> Active breakpoints: </p>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-block d-sm-none">
+                                    <p class="bold pb-0">Default</p>
+                                </div>
+                                <div class="d-none d-sm-block">
+                                    <p class="faded pb-0">Default</p>
+                                </div>
+                            </div>
+                            <div class="col-3 d-none d-sm-block">
+                                <div class="d-none d-sm-block d-md-none">
+                                    <span class="bold mono">sm</span>
+                                </div>
+                                <div class="d-none d-md-block">
+                                    <span class="faded mono">sm</span>
+                                </div>
+                            </div>
+                            <div class="col-3 d-none d-md-block">
+                                <div class="d-none d-md-block d-lg-none">
+                                    <span class="bold mono">md</span>
+                                </div>
+                                <div class="d-none d-lg-block">
+                                    <span class="faded mono">md</span>
+                                </div>
+                            </div>
+                            <div class="col-3 d-none d-lg-block">
+                                <div class="d-none d-lg-block d-xl-none">
+                                    <span class="bold mono">lg</span>
+                                </div>
+                                <div class="d-none d-xl-block">
+                                    <span class="faded mono">lg</span>
+                                </div>
+                            </div>
+                            <div class="col-3 d-none d-xl-block">
+                                <div class="d-none d-xl-block">
+                                    <span class="bold mono">xl</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pb-2">
+                    <div class="col-6 col-sm-8 resp-col">
+                        <p class="d-block d-sm-none">
+                            <span class="bold mono">col-6</span> <span class="faded mono">col-sm-8</span>
+                        </p>
+                        <p class="d-none d-sm-block">
+                            <span class="faded mono">col-6</span> <span class="bold mono">col-sm-8</span>
+                        </p>
+                    </div>
+                    <div class="col-6 col-sm-4 resp-col">
+                        <p class="d-block d-sm-none">
+                            <span class="bold mono">col-6</span> <span class="faded mono">col-sm-4</span>
+                        </p>
+                        <p class="d-none d-sm-block">
+                            <span class="faded mono">col-6</span> <span class="bold mono">col-sm-4</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="row pb-2">
+                    <div class="col-12 col-md-5 resp-col">
+                        <p class="d-block d-md-none">
+                            <span class="bold mono">col-12</span> <span class="faded mono">col-md-5</span>
+                        </p>
+                        <p class="d-none d-md-block">
+                            <span class="faded mono">col-12</span> <span class="bold mono">col-md-5</span>
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-7 resp-col">
+                        <p class="d-block d-md-none">
+                            <span class="bold mono">col-12</span> <span class="faded mono">col-md-7</span>
+                        </p>
+                        <p class="d-none d-md-block">
+                            <span class="faded mono">col-12</span> <span class="bold mono">col-md-7</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="row pb-2">
+                    <div class="col-12 col-lg-4 resp-col text-center">
+                        <p class="d-block d-lg-none">
+                            <span class="bold mono">col-12</span> <span class="faded mono">col-lg-4</span>
+                        </p>
+                        <p class="d-none d-lg-block">
+                            <span class="faded mono">col-12</span> <span class="bold mono">col-lg-4</span>
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-4 resp-col text-center">
+                        <p class="d-block d-lg-none">
+                            <span class="bold mono">col-12</span> <span class="faded mono">col-lg-4</span>
+                        </p>
+                        <p class="d-none d-lg-block">
+                            <span class="faded mono">col-12</span> <span class="bold mono">col-lg-4</span>
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-4 resp-col text-center">
+                        <p class="d-block d-lg-none">
+                            <span class="bold mono">col-12</span> <span class="faded mono">col-lg-4</span>
+                        </p>
+                        <p class="d-none d-lg-block">
+                            <span class="faded mono">col-12</span> <span class="bold mono">col-lg-4</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-xl-3 resp-col text-center">
+                        <p class="d-block d-xl-none">
+                            <span class="bold mono">col-6</span> <span class="faded mono">col-xl-3</span>
+                        </p>
+                        <p class="d-none d-xl-block">
+                            <span class="faded mono">col-6</span> <span class="bold mono">col-xl-3</span>
+                        </p>
+                    </div>
+                    <div class="col-6 col-xl-3 resp-col text-center">
+                        <p class="d-block d-xl-none">
+                            <span class="bold mono">col-6</span> <span class="faded mono">col-xl-3</span>
+                        </p>
+                        <p class="d-none d-xl-block">
+                            <span class="faded mono">col-6</span> <span class="bold mono">col-xl-3</span>
+                        </p>
+                    </div>
+                    <div class="col-6 col-xl-3 resp-col text-center">
+                        <p class="d-block d-xl-none">
+                            <span class="bold mono">col-6</span> <span class="faded mono">col-xl-3</span>
+                        </p>
+                        <p class="d-none d-xl-block">
+                            <span class="faded mono">col-6</span> <span class="bold mono">col-xl-3</span>
+                        </p>
+                    </div>
+                    <div class="col-6 col-xl-3 resp-col text-center">
+                        <p class="d-block d-xl-none">
+                            <span class="bold mono">col-6</span> <span class="faded mono">col-xl-3</span>
+                        </p>
+                        <p class="d-none d-xl-block">
+                            <span class="faded mono">col-6</span> <span class="bold mono">col-xl-3</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid pt-2">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center">Applying more column classes</h2>
+                    <ul class="text-left">
+                        <li>You can apply more than 2 column classes to the same element.</li>
+                        <li>The ones for the screen size larger will always override the ones below.</li>
+                        <li>Remember to think mobile first: The smallest size will apply to all above it, unless overridden with a new class for a larger screen.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 col-lg-5 resp-col">
+                    <p class="d-block d-md-none">
+                        <span class="bold mono">col-12</span> <span class="faded mono">col-md-4</span> <span class="faded mono">col-lg-5</span>
+                    </p>
+                    <p class="d-none d-md-block d-lg-none">
+                        <span class="faded mono">col-12</span> <span class="bold mono">col-md-4</span> <span class="faded mono">col-lg-5</span>
+                    </p>
+                    <p class="d-none d-lg-block">
+                        <span class="faded mono">col-12</span> <span class="faded mono">col-md-4</span> <span class="bold mono">col-lg-5</span>
+                    </p>
+                </div>
+                <div class="col-12 col-md-4 col-lg-5 resp-col">
+                    <p class="d-block d-md-none">
+                        <span class="bold mono">col-12</span> <span class="faded mono">col-md-4</span> <span class="faded mono">col-lg-5</span>
+                    </p>
+                    <p class="d-none d-md-block d-lg-none">
+                        <span class="faded mono">col-12</span> <span class="bold mono">col-md-4</span> <span class="faded mono">col-lg-5</span>
+                    </p>
+                    <p class="d-none d-lg-block">
+                        <span class="faded mono">col-12</span> <span class="faded mono">col-md-4</span> <span class="bold mono">col-lg-5</span>
+                    </p>
+                </div>
+                <div class="col-12 col-md-4 col-lg-5 resp-col">
+                    <p class="d-block d-md-none">
+                        <span class="bold mono">col-12</span> <span class="faded mono">col-md-4</span> <span class="faded mono">col-lg-5</span>
+                    </p>
+                    <p class="d-none d-md-block d-lg-none">
+                        <span class="faded mono">col-12</span> <span class="bold mono">col-md-4</span> <span class="faded mono">col-lg-5</span>
+                    </p>
+                    <p class="d-none d-lg-block">
+                        <span class="faded mono">col-12</span> <span class="faded mono">col-md-4</span> <span class="bold mono">col-lg-5</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-secondary mt-5 p-3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 text-white">
+                    <h3>Developed by Anna Greaves 2019</h3>
+                    <a href="https://github.com/AJGreaves" target="_blank" aria-label="Find me on GitHub" rel="noopener">
+                        <i class="fab fa-github-alt"></i>
+                    </a>
+                    <a href="https://www.facebook.com/a.gilhespy" target="_blank" aria-label="Find me on Facebook" rel="noopener">
+                    <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/anna-greaves-923474186/" target="_blank" aria-label="Find me on LinkedIn" rel="noopener">
+                    <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://code-institute-room.slack.com/messages/DF89S323B/" target="_blank" aria-label="Find me on Slack" rel="noopener">
+                    <i class="fab fa-slack"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src="assets/js/prism.js"></script>
+</body>
+
+</html>
