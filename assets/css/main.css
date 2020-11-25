@@ -1,56 +1,28 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Montserrat|Caveat+Brush:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Montserrat:400,700,900');
+
+/* variables */
+
+:root {
+    --blue: #009fe3;
+    --teal: #23bbbb;
+    --orange: #e84610;
+    --grey: #445261;
+    --off-white: #E8E8E8;
+}
 
 /* Fonts */
 
 body {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+    color: var(--grey);
 }
 
 .mono {
-    font-family: 'Roboto Mono', monospace;
-    background-color: #E8E8E8;
-    padding: 0px 4px;
-    color: black;
-}
-
-h1 {
-    font-family: 'Caveat Brush', cursive;
-    font-size: 2.7rem;
-    padding-top: 3rem;
-    padding-bottom: 2rem;
-    text-shadow: 1.5px 1.5px #9c9c9c99;
-}
-
-.bg-secondary h1 {
-    text-shadow: 2px 2px #000;
-}
-
-h2 {
-    font-family: 'Caveat Brush', cursive;
-    font-size: 2.2rem;
-    padding-top: 3rem;
-    padding-bottom: 2rem;
-    text-shadow: 1.5px 1.5px #9c9c9c99;
-}
-
-h3 {
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    color: #fafafa;
-    font-size: 1rem;
-}
-
-p.spacing-text {
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 400;
-    font-size: 1rem;
-    text-align: left;
-    margin-top: 1em;
-    margin-bottom: 0.5em;
-    margin-left: 1em;
-    padding: 0;
-    
+    font-family: monospace, serif;
+    background-color: var(--off-white);
+    padding: 2px;
+    color: var(--orange);
 }
 
 .faded {
@@ -62,7 +34,16 @@ p.spacing-text {
 }
 
 .black-text {
-    color: black;
+    color: var(--grey);
+}
+
+p {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.column-sizes p {
+    font-size: 1rem;
 }
 
 /* paddings and margins */
@@ -72,118 +53,12 @@ pre.language-markup {
     padding: 0 1em;
 }
 
-li,
-p {
-    font-size: 1.5rem;
-    padding-bottom: 1rem;
-}
-
-li.nav-item {
-    padding-bottom: 0rem;
-}
-
-ul, ol {
-    padding-left: 2rem;
-}
-
-.structure-p {
-    margin-top: 2rem;
-    margin-bottom: 0;
-}
-
-.my-column p {
-    margin-bottom: 0.5rem;
-}
-
 #grid-columns {
     margin-top: 8rem;
     margin-bottom: 8rem;
 }
 
-
-/* navigation */
-
-.nav-item {
-    font-size: 1em;
-}
-
-.columns-column p {
-    font-size: 1rem;
-}
-
-.navbar {
-    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);    
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-}
-
-
-/* horizontal rules to break up sections of pages */
-
-hr {
-    display: block;
-    position: relative;
-    padding: 0;
-    margin: 15px;
-    height: 0;
-    width: 100%;
-    max-height: 0;
-    font-size: 1px;
-    line-height: 0;
-    clear: both;
-    border: none;
-    border-top: 1px solid #aaaaaa;
-    border-bottom: 1px solid #ffffff;
-}
-
-
-/* social icons */
-
-.fab {
-    font-size: 2rem;
-    color: #ffffff;
-    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
-    transition: all 0.2s ease-in-out 0.2s;
-    -moz-transition: all 0.2s ease-in-out 0.2s;
-    -webkit-transition: all 0.2s ease-in-out 0.2s;
-    padding: 0rem 1rem;
-}
-
-.fab:hover {
-    transform: scale(1.4);
-}
-
-.fa-facebook:hover {
-    color: #3b5998;
-}
-
-.fa-github-alt:hover {
-    color: #000;
-}
-
-.fa-slack:hover {
-    color: #3eb991;
-}
-
-.fa-linkedin:hover {
-    color: #0077B5;
-}
-
-/* other hover styles */
-
-a:hover {
-    text-decoration: none;
-}
-
-
 /* containers */
-
-.wrapper {
-    padding: 1rem 1rem 2rem 1rem;
-    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    /*pushes content under navbar*/
-    margin-top: 56px;
-}
 
 .basics-container {
     padding: 1rem;
@@ -209,8 +84,8 @@ a:hover {
     font-size: 1.5rem;
     padding: 1rem;
     background-color: white;
-    color: black;
-    border: 2px solid #000;
+    color: var(--grey);
+    border: 1px solid var(--grey);
 }
 
 .mini-col {
@@ -258,63 +133,28 @@ a:hover {
 /* background colours */
 
 .bgcolor1 {
-    background-color: #008eaa;
+    background-color: var(--blue);
     color: white;
 }
 
 .bgcolor2 {
-    background-color: #0077c8;
+    background-color: var(--teal);
     color: white;
 }
 
 .bgcolor3 {
-    background-color: #a51890;
+    background-color: var(--orange);
     color: white;
 }
 
 .bgcolor4 {
-    background-color: #da1884;
-    color: white;
+    background-color: var(--grey);
+    color:white;
 }
 
 .bgcolor5 {
-    background-color: #e4002b;
-    color: white;
-}
-
-.bgcolor6 {
-    background-color: #fe5000;
-    color: white;
-}
-
-.bgcolor7 {
-    background-color: #efdf00;
-    color: white;
-}
-
-.bgcolor8 {
-    background-color: #009f4d;
-    color: white;
-}
-
-.bgcolor9 {
-    background-color: #00205b;
-    color: white;
-}
-
-.bgcolor10 {
-    background-color: #005670;
-    color: white;
-}
-
-.bgcolor11 {
-    background-color: #4298b5;
-    color: white;
-}
-
-.bgcolor12 {
-    background-color: #74d2e7;
-    color: white;
+    background-color: var(--off-white);
+    color: var(--grey);
 }
 
 /* Shadows */
