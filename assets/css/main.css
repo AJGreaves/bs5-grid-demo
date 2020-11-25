@@ -138,7 +138,7 @@ pre.language-markup {
 }
 
 .bgcolor2 {
-    background-color: var(--teal);
+    background-color: var(--grey);
     color: white;
 }
 
@@ -148,7 +148,7 @@ pre.language-markup {
 }
 
 .bgcolor4 {
-    background-color: var(--grey);
+    background-color: var(--teal);
     color:white;
 }
 
