@@ -47,8 +47,19 @@
                     <li class="nav-item">
                         <a class="nav-link" href="responsive.html">Responsive</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="breakpoints.html">Breakpoints</a>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-expanded="false">
+                            Breakpoints
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="breakpoints-sm.html">sm</a></li>
+                            <li><a class="dropdown-item" href="breakpoints-md.html">md</a></li>
+                            <li><a class="dropdown-item" href="breakpoints-lg.html">lg</a></li>
+                            <li><a class="dropdown-item" href="breakpoints-xl.html">xl</a></li>
+                            <li><a class="dropdown-item" href="breakpoints-xxl.html">xxl</a></li>
+                            <li><a class="dropdown-item" href="breakpoints-multi.html">Multiple classes</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -112,68 +123,6 @@
                 </div>
             </div>
             <div class="row pb-4">
-                <div class="col-6 col-sm-8 resp-col bgcolor1">
-                    <p class="d-block d-sm-none">
-                        <span class="bold mono">col-6</span> <span class="faded mono">col-sm-8</span>
-                    </p>
-                    <p class="d-none d-sm-block">
-                        <span class="faded mono">col-6</span> <span class="bold mono">col-sm-8</span>
-                    </p>
-                </div>
-                <div class="col-6 col-sm-4 resp-col bgcolor2">
-                    <p class="d-block d-sm-none">
-                        <span class="bold mono">col-6</span> <span class="faded mono">col-sm-4</span>
-                    </p>
-                    <p class="d-none d-sm-block">
-                        <span class="faded mono">col-6</span> <span class="bold mono">col-sm-4</span>
-                    </p>
-                </div>
-            </div>
-            <div class="row pb-4">
-                <div class="col-12 col-md-5 resp-col bgcolor3">
-                    <p class="d-block d-md-none">
-                        <span class="bold mono">col-12</span> <span class="faded mono">col-md-5</span>
-                    </p>
-                    <p class="d-none d-md-block">
-                        <span class="faded mono">col-12</span> <span class="bold mono">col-md-5</span>
-                    </p>
-                </div>
-                <div class="col-12 col-md-7 resp-col bgcolor4">
-                    <p class="d-block d-md-none">
-                        <span class="bold mono">col-12</span> <span class="faded mono">col-md-7</span>
-                    </p>
-                    <p class="d-none d-md-block">
-                        <span class="faded mono">col-12</span> <span class="bold mono">col-md-7</span>
-                    </p>
-                </div>
-            </div>
-            <div class="row pb-4">
-                <div class="col-12 col-lg-4 resp-col text-center bgcolor5">
-                    <p class="d-block d-lg-none">
-                        <span class="bold mono">col-12</span> <span class="faded mono">col-lg-4</span>
-                    </p>
-                    <p class="d-none d-lg-block">
-                        <span class="faded mono">col-12</span> <span class="bold mono">col-lg-4</span>
-                    </p>
-                </div>
-                <div class="col-12 col-lg-4 resp-col text-center bgcolor2">
-                    <p class="d-block d-lg-none">
-                        <span class="bold mono">col-12</span> <span class="faded mono">col-lg-4</span>
-                    </p>
-                    <p class="d-none d-lg-block">
-                        <span class="faded mono">col-12</span> <span class="bold mono">col-lg-4</span>
-                    </p>
-                </div>
-                <div class="col-12 col-lg-4 resp-col text-center bgcolor1">
-                    <p class="d-block d-lg-none">
-                        <span class="bold mono">col-12</span> <span class="faded mono">col-lg-4</span>
-                    </p>
-                    <p class="d-none d-lg-block">
-                        <span class="faded mono">col-12</span> <span class="bold mono">col-lg-4</span>
-                    </p>
-                </div>
-            </div>
-            <div class="row pb-4">
                 <div class="col-6 col-xl-3 resp-col text-center bgcolor3">
                     <p class="d-block d-xl-none">
                         <span class="bold mono">col-6</span> <span class="faded mono">col-xl-3</span>
@@ -207,73 +156,8 @@
                     </p>
                 </div>
             </div>
-            <div class="row pb-4">
-                <div class="col-4 col-xxl-3 resp-col text-center bgcolor2">
-                    <p class="d-block d-xxl-none">
-                        <span class="bold mono">col-4</span> <span class="faded mono">col-xxl-3</span>
-                    </p>
-                    <p class="d-none d-xxl-block">
-                        <span class="faded mono">col-6</span> <span class="bold mono">col-xxl-3</span>
-                    </p>
-                </div>
-                <div class="col-4 col-xxl-6 resp-col text-center bgcolor1">
-                    <p class="d-block d-xxl-none">
-                        <span class="bold mono">col-4</span> <span class="faded mono">col-xxl-6</span>
-                    </p>
-                    <p class="d-none d-xxl-block">
-                        <span class="faded mono">col-6</span> <span class="bold mono">col-xxl-6</span>
-                    </p>
-                </div>
-                <div class="col-4 col-xxl-3 resp-col text-center bgcolor3">
-                    <p class="d-block d-xxl-none">
-                        <span class="bold mono">col-4</span> <span class="faded mono">col-xxl-3</span>
-                    </p>
-                    <p class="d-none d-xxl-block">
-                        <span class="faded mono">col-6</span> <span class="bold mono">col-xxl-3</span>
-                    </p>
-                </div>
-            </div>
         </div>
-    </div>
-    <div class="container-fluid pt-2 pb-5">
-        
-        <div class="row">
-            <div class="col-12 col-md-4 col-lg-5 resp-col bgcolor4">
-                <p class="d-block d-md-none">
-                    <span class="bold mono">col-12</span> <span class="faded mono">col-md-4</span> <span class="faded mono">col-lg-5</span>
-                </p>
-                <p class="d-none d-md-block d-lg-none">
-                    <span class="faded mono">col-12</span> <span class="bold mono">col-md-4</span> <span class="faded mono">col-lg-5</span>
-                </p>
-                <p class="d-none d-lg-block">
-                    <span class="faded mono">col-12</span> <span class="faded mono">col-md-4</span> <span class="bold mono">col-lg-5</span>
-                </p>
-            </div>
-            <div class="col-12 col-md-4 col-lg-5 resp-col bgcolor5">
-                <p class="d-block d-md-none">
-                    <span class="bold mono">col-12</span> <span class="faded mono">col-md-4</span> <span class="faded mono">col-lg-5</span>
-                </p>
-                <p class="d-none d-md-block d-lg-none">
-                    <span class="faded mono">col-12</span> <span class="bold mono">col-md-4</span> <span class="faded mono">col-lg-5</span>
-                </p>
-                <p class="d-none d-lg-block">
-                    <span class="faded mono">col-12</span> <span class="faded mono">col-md-4</span> <span class="bold mono">col-lg-5</span>
-                </p>
-            </div>
-            <div class="col-12 col-md-4 col-lg-5 resp-col bgcolor3">
-                <p class="d-block d-md-none">
-                    <span class="bold mono">col-12</span> <span class="faded mono">col-md-4</span> <span class="faded mono">col-lg-5</span>
-                </p>
-                <p class="d-none d-md-block d-lg-none">
-                    <span class="faded mono">col-12</span> <span class="bold mono">col-md-4</span> <span class="faded mono">col-lg-5</span>
-                </p>
-                <p class="d-none d-lg-block">
-                    <span class="faded mono">col-12</span> <span class="faded mono">col-md-4</span> <span class="bold mono">col-lg-5</span>
-                </p>
-            </div>
-        </div>
-    </div>
-    
+    </div> 
 
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js"
