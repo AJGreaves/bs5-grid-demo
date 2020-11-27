@@ -131,6 +131,16 @@ pre.language-markup {
     font-family: 'Roboto Mono', monospace;
 }
 
+.gex-row {
+    padding: 1rem;
+    background-color: var(--off-white);
+    border: 3px solid white;
+}
+.gex-col {
+    height: 3rem;
+    border: 3px solid var(--off-white);
+}
+
 /* background colours */
 
 .bgcolor1 {

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Bootstrap 5 demo site">
+    <meta name="author" content="Anna Greaves for Code Institute">
+    <link rel="icon" type="image/x-icon" href="https://learn.codeinstitute.net/static/ci-theme/images/favicon.70793afcf85e.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-CuOF+2SnTUfTwSZjCXf01h7uYhfOBuxIhGKPbfEJ3+FqH/s6cIFN9bGr1HmAg4fQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/prism.css">
+
+    <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
+    <title>Bootstrap 5 grid demo | Grid Structure</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://learn.codeinstitute.net/static/ci-theme/images/logo.png" alt="Code Institute Logo" height="30">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Introduction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="structure.html">Grid Structure</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="containers.html">Containers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rows.html">Rows</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="columns.html">Columns</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="responsive.html">Responsive</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-expanded="false">
+                            Breakpoints
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="breakpoints-sm.html">sm</a></li>
+                            <li><a class="dropdown-item" href="breakpoints-md.html">md</a></li>
+                            <li><a class="dropdown-item" href="breakpoints-lg.html">lg</a></li>
+                            <li><a class="dropdown-item" href="breakpoints-xl.html">xl</a></li>
+                            <li><a class="dropdown-item" href="breakpoints-xxl.html">xxl</a></li>
+                            <li><a class="dropdown-item" href="breakpoints-multi.html">Multiple classes</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        <div class="container mt-5">
+            <div class="row gex-row">
+                <div class="col-4 bgcolor1 gex-col"></div>
+                <div class="col-4 bgcolor2 gex-col"></div>
+                <div class="col-4 bgcolor3 gex-col"></div>
+            </div>
+
+            <div class="row gex-row">
+                <div class="col-6 bgcolor4 gex-col"></div>
+                <div class="col-6 bgcolor1 gex-col"></div>
+            </div>
+
+            <div class="row gex-row">
+                <div class="col-3 bgcolor2 gex-col"></div>
+                <div class="col-9 bgcolor3 gex-col"></div>
+            </div>
+
+            <div class="row gex-row justify-content-center">
+                <div class="col-8 bgcolor4 gex-col"></div>
+            </div>
+
+            <div class="row gex-row justify-content-around">
+                <div class="col-4 bgcolor1 gex-col"></div>
+                <div class="col-4 bgcolor2 gex-col"></div>
+            </div>
+
+            <div class="row gex-row">
+                <div class="col-2 bgcolor3 gex-col"></div>
+                <div class="col-2 bgcolor2 gex-col"></div>
+                <div class="col-2 bgcolor1 gex-col"></div>
+                <div class="col-2 bgcolor4 gex-col"></div>
+                <div class="col-2 bgcolor3 gex-col"></div>
+                <div class="col-2 bgcolor4 gex-col"></div>
+            </div>
+
+            <div class="row gex-row justify-content-around">
+                <div class="col-8 bgcolor2 gex-col"></div>
+                <div class="col-3 bgcolor1 gex-col"></div>
+                <div class="col-1 bgcolor3 gex-col"></div>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy" crossorigin="anonymous">
+    </script>
+    <script src="assets/js/prism.js"></script>
+</body>
+
+</html>
